@@ -134,14 +134,16 @@
         </div>
     </div>
 
-    <!-- Khoros Brand Messenger / Flow Bot -->
     <script type='text/javascript'> 
-    window.KHOROS_CONFIG = { 
+    window.KHOROS_CONFIG  = { 
        companyKey: 'airfrancedev-eu', 
-       widgetId: 'af433a9b-bcb7-4f0c-95dd-c5a6223a4e35'
+       widgetId: 'af433a9b-bcb7-4f0c-95dd-c5a6223a4e35' 
     }; 
-    </script>
-    <script type='text/javascript' src='https://brand-messenger.app.khoros.com/bundle/loader.js'></script> 
+    (function(){var scriptTag = document.createElement('script');
     
+    scriptTag.setAttribute('src','https://brand-messenger.app.khoros.com/bundle/loader.js?v=' + new Date().getTime());
+    
+    document.head.appendChild(scriptTag);})();</script> 
+  
 </body>
 </html>
